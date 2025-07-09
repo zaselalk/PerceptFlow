@@ -1,0 +1,89 @@
+.diagram-drawing-tool {
+    display: flex;
+    height: calc(100vh - 80px); /* Adjust based on header height */
+}
+
+.sidebar {
+    width: 200px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.shape-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.node-item {
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.node-item svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Custom Node Styles */
+.react-flow__node-default.rectangle-node {
+    width: 100px;
+    height: 50px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-flow__node-default.circle-node {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #d6f5d6;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-flow__node-default.diamond-node {
+    width: 80px;
+    height: 80px;
+    background-color: #f5d6d6;
+    border: 1px solid #ccc;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-flow__node-default.diamond-node > div {
+    transform: rotate(-45deg);
+}
+
+.react-flow__node-default.triangle-node {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #d6e0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-flow__node-default.triangle-node > div {
+    position: relative;
+    top: 30px;
+}
+
+.canvas-container {
+    flex-grow: 1;
+}
